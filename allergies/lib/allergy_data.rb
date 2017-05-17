@@ -13,7 +13,12 @@ class AllergyData
 
 
   def allergy_score(number)
-    allergy_collection[number]
+    # allergy_collection[number]
+    sum = 0
+    until sum == number
+      allergy_collection.each do |key, value|
   end
+
+
 
 end

@@ -23,5 +23,13 @@ class AllergyDataTest < Minitest::Test
     assert_equal expected, actual
   end
 
+  def test_score_with_two_allergies
+    allergy_data = AllergyData.new
+    allergy_number = 12
+
+    assert_equal "shellfish, strawberries", allergy_data.allergy_score(allergy_number)
+  end
+
+
 
 end
